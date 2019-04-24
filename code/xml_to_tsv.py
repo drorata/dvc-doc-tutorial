@@ -38,7 +38,7 @@ def process_posts(fd_in, fd_out, target_tag):
 
             num += 1
         except Exception as ex:
-            sys.stderr.write('Error in line {}: {}\n'.format(num, ex))
+            sys.stderr.write('Skipping the line {}: {}\n'.format(num, ex))
 
 
 if __name__ == '__main__':
