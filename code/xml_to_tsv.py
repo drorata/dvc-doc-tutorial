@@ -3,6 +3,7 @@ import os
 import re
 import xml.etree.ElementTree
 import conf
+import io
 
 INPUT = conf.source_xml
 OUTPUT = conf.source_tsv
@@ -47,6 +48,7 @@ if __name__ == '__main__':
         print_usage('Input file {} does not exist'.format(INPUT))
         sys.exit(1)
 
-    with open(INPUT, encoding='utf8') as fd_in:
-        with open(OUTPUT, 'w', encoding='utf8') as fd_out:
+    with io.open(INPUT, encoding='utf8') as fd_in:
+        with io.open(OUTPUT, 'w', encoding='utf8') as fd_out:
             process_posts(fd_in, fd_out, target_tag)
+
