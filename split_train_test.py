@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 import conf
 
-INPUT = conf.source_tsv
+INPUT = conf.source_tsv_head
 
 def output_name(fname, suffix):
     idx = fname.rfind('.')

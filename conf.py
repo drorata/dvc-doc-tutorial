@@ -4,6 +4,7 @@ data_dir = 'data'
 
 source_xml = os.path.join(data_dir, 'Posts.xml')
 source_tsv = os.path.join(data_dir, 'Posts.tsv')
+source_tsv_head = os.path.join(data_dir, 'Posts_head.tsv')
 
 train_tsv = os.path.join(data_dir, 'Posts-train.tsv')
 test_tsv = os.path.join(data_dir, 'Posts-test.tsv')
